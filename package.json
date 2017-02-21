@@ -1,0 +1,24 @@
+{
+  "name": "smbo",
+  "version": "0.0.1",
+  "description": "Small Busniess Back Office",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "test"
+  },
+  "keywords": [
+    "smbo",
+    "sg",
+    "sbg"
+  ],
+  "author": "jadenz",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
