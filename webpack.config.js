@@ -12,7 +12,7 @@ module.exports = {
     },
     plugins: [
         new HtmlwebpackPlugin({
-            title: 'Small Busniess Back Office'
+            title: 'Small Business Back Office'
         })
     ]
 };

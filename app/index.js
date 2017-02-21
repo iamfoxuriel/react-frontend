@@ -1,1 +1,1 @@
-console.log("do nothing");
+document.body.innerHTML="<h1>Hello SMBO</h1>";
