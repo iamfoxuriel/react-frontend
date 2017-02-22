@@ -29,6 +29,7 @@ var config = {
     },
 
     module: {
+        // noParse: /react|react-dom/,
         rules: [{
             test: /\.js|jsx$/,
             use: [ {
@@ -61,25 +62,7 @@ var config = {
 };
 
 
-// /**
-//  * define alias for vendors
-//  *
-//  */
-// var deps = {
-//     "react": "react/dist/react.min.js",
-//     "react-dom": "react-dom/dist/react-dom.min.js",
-// };
-// var allDeps = [];
-// var NODE_MODULE_DIR = path.join(__dirname, 'node_modules');
-// for (var name in deps) {
-//     console.log(name);
-//     var depPath = path.resolve(NODE_MODULE_DIR, deps[name]);
-//     config.resolve.alias[name] = depPath;
-//     allDeps.push(name);
-// }
-//
-// // config.module.noParse= "/" + allDeps.join("|") + "/";
-// config.module.noParse = /react|react-dom/;
+
 
 
 module.exports = config;
