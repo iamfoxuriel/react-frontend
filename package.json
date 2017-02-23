@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --hot --inline --progress --colors",
     "build": "set NODE_ENV=production && webpack -p",
-    "lint": "eslint ./client ./webpack.config.js -f table || true",
+    "lint": "eslint ./app  -f table",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
