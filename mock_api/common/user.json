@@ -1,0 +1,89 @@
+{
+  "sessionUser": {
+    "firstName": "Jaden",
+    "lastName": "Zhuang",
+    "userId": 3999,
+    "preFailDate": null,
+    "preLoginDate": null,
+    "lastLoginDate": "2016-11-22T00:56:02.167+0000",
+    "sessionToken": "Njk5N0M0QkQxRUI0Nzk2OUQzNjYyMjI1NDEyOTg4MDYucXBibzAxYg==",
+    "currentRole": {
+      "roleID": "admidev.jaden",
+      "roleName": "Medicare Developer"
+    },
+    "sessionId": "6997C4BD1EB47969D366222541298806.qpbo01b",
+    "roles": [
+      {
+        "roleID": "admin.dev.jaden",
+        "roleName": "Admin Developer"
+      },
+      {
+        "roleID": "jadenz",
+        "roleName": "Administrator"
+      },
+      {
+        "roleID": "email.jaden",
+        "roleName": "Email Admin"
+      },
+      {
+        "roleID": "lad.jaden",
+        "roleName": "Licensing Administrator"
+      },
+      {
+        "roleID": "admidev.jaden",
+        "roleName": "Medicare Developer"
+      },
+      {
+        "roleID": "ms.jaden",
+        "roleName": "Medicare Sales"
+      },
+      {
+        "roleID": "super.jaden",
+        "roleName": "Super"
+      },
+      {
+        "roleID": "user.jaden",
+        "roleName": "User Administrator"
+      }
+    ],
+    "applicationType": "IFP",
+    "clientIPAddress": "10.172.97.119",
+    "name": "admidev.jaden"
+  },
+  "boUser": {
+    "loginId": "jadenz",
+    "firstName": "Jaden",
+    "lastName": "Zhuang",
+    "phone1": "123",
+    "phone2": "111-9999",
+    "nationalProducerNumber": null,
+    "email": "Jaden.Zhuang@ehealth.com",
+    "role": "Medicare Developer",
+    "timeZone": null,
+    "agentType": null,
+    "newBoseAllowed": true,
+    "defaultBoseVersion": "2",
+    "boUserId": "admidev.jaden"
+  },
+  "resources": [
+    "RIGHT_GLOBAL_SEARCH",
+    "RIGHT_VIEW_EDIT_SCREEN",
+    "RIGHT_VIEW_HTML_APP",
+    "RIGHT_LEAD_GLOBAL_SEARCH",
+    "RIGHT_START_TPI_APPLICATION",
+    "RIGHT_VIEW_SEARCH",
+    "RIGHT_TODAY_OPPORTUNITY",
+    "RIGHT_VIEW_MEDICARE_INBOUND_SCRIPT",
+    "RIGHT_VIEW_MEDICARE_OUTBOUND_SCRIPT",
+    "RIGHT_VIEW_KEY_INFO",
+    "RIGHT_VIEW_LEAD_SEARCH",
+    "RIGHT_RESTRICTED_SSN",
+    "RIGHT_VIEW_CREATE_NEW_LEAD",
+    "RIGHT_EDIT_MEMBERS",
+    "RIGHT_SAVE_COM_LOG",
+    "RIGHT_SALES_PERFORMANCE",
+    "RIGHT_SEND_PROPOSAL_EMAIL",
+    "RIGHT_Agent_Call",
+    "RIGHT_GEN_OUTGOING_CORR"
+  ]
+}
