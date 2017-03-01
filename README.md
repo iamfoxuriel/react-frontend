@@ -15,6 +15,10 @@ IDE for Javascript
 1. `npm install`  
 2. `npm run build` or `npm start`  
 
+##ReactJS
+
+##Redux
+[Official Site](http://redux.js.org/) 
 
 ##Babel
 ###Config file

@@ -14,6 +14,20 @@ node version >=4.3.0 <5.0.0 || >=5.10
 1. `npm install`  
 2. `npm run build` or `npm start`  
 
+##ReactJS
+//TODO
+##Redux
+[中文文档](http://cn.redux.js.org/) 
+###Store
+任何时候Store中保存完整的State树
+###Reducer
+reducer里面是纯函数, 必须返回immutable对象.  
+对于有限层级的对象可以使用Object.assign().
+###Action Creator
+export 创建Action object的函数以及Action name常量  
+###middleWare
+
+
 
 ##Babel
 ###配置文件

@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+
 
 class SMBO extends Component {
 
     render() {
         return (
-            <div>
+            <Provider store={store}>
                 <h1>App</h1>
-                <ul>
-                    <li><a href="#/about">About</a></li>
-                    <li><a href="#/inbox">Inbox</a></li>
-                </ul>
-            </div>
+            </Provider>
         );
     }
 }
