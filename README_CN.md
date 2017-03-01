@@ -8,7 +8,7 @@ _[Switch English version](./README.md)_
 ## 如何构建项目
 ### 开发环境准备
 node version >=4.3.0 <5.0.0 || >=5.10  
-习惯使用的Javascript的IDE
+平时习惯使用的JavascriptIDE
 
 ###构建命令
 1. `npm install`  
@@ -17,7 +17,7 @@ node version >=4.3.0 <5.0.0 || >=5.10
 
 ##Babel
 ###配置文件
-地址: [.babelrc](./.babelrc)  
+传送门: [.babelrc](./.babelrc)  
 插件 https://github.com/gaearon/react-transform-hmr  
 
 
@@ -25,10 +25,11 @@ node version >=4.3.0 <5.0.0 || >=5.10
 
 
 ##ESLint
-
+>ESLint是目标是提供一个插件化的javascript代码检测工具
+项目将其作为静态代码对于编码风格的检测工具
 ###配置文件
 延伸信息 [ESLint rules](http://eslint.cn/docs/rules/)  
-地址: [.eslintrc](./.eslintrc)  
+传送门: [.eslintrc](./.eslintrc)  
 config code: 0 = 关闭, 1 = 警告, 2 = 报错
 
 ###IntelliJ/Webstorm 配置 Javascript styles

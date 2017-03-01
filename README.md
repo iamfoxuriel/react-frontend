@@ -26,6 +26,8 @@ Plugins https://github.com/gaearon/react-transform-hmr
 
 
 ##ESLint
+>ESLint is The pluggable linting utility for JavaScript and JSX
+Our poject use it as a tool to check code styles
 
 ###config file
 For more rules information [ESLint rules](http://eslint.cn/docs/rules/)  
