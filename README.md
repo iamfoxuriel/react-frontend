@@ -22,12 +22,12 @@ Plugins https://github.com/gaearon/react-transform-hmr
 
 
 ###config file
-For more rules information [ESLint rules](http://eslint.cn/docs/rules/)
+For more rules information [ESLint rules](http://eslint.cn/docs/rules/)  
 location: [.eslintrc](./.eslintrc)  
 config code: 0 = off, 1 = warn, 2 = error
 
 ###Intellij config for Javascript styles
-Settings path: `Editor->Code Style-> JavaScript`
-`Tab and Indents` set to 4
+Settings path: `Editor->Code Style-> JavaScript`  
+`Tab and Indents` set to 4  
 `Spaces`  enable ES6 `import/export braces`
 
