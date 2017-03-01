@@ -21,15 +21,19 @@ env:
 
 rules:
   indent:
-    - error
+    - 1
     - 4
   func-style: 0
   func-names: 0
-  comma-dangle: 0
-  no-console: 0
+  comma-dangle:
+    - 1
+    - always-multiline
+  no-console: 1
   no-param-reassign: 0
   linebreak-style: 0
   import/no-extraneous-dependencies: 0
   import/no-unresolved: 0
   import/extensions: 0
   react/jsx-filename-extension: 0
+  react/jsx-indent: 0
+  react/prefer-stateless-function: 1
