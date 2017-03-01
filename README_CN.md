@@ -33,7 +33,7 @@ config code: 0 = 关闭, 1 = 警告, 2 = 报错
 
 ###IntelliJ/Webstorm 配置 Javascript styles
 >Settings 路径: `Editor->Code Style-> JavaScript`  
-`Tab and Indents` 设置成 4
+`Tab and Indents` 设置成 4  
 `Spaces`  enable ES6 `import/export braces`  
 如果你是使用IntelliJ/Webstorm, 只要在IDE中使用EditorConfig插件即可 
 

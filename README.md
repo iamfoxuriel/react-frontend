@@ -25,7 +25,7 @@ Plugins https://github.com/gaearon/react-transform-hmr
 ##Mock-api
 
 
-##Add ESLint
+##ESLint
 
 ###config file
 For more rules information [ESLint rules](http://eslint.cn/docs/rules/)  
