@@ -25,8 +25,8 @@ node version >=4.3.0 <5.0.0 || >=5.10
 
 
 ##ESLint
->ESLint是目标是提供一个插件化的javascript代码检测工具
-项目将其作为静态代码对于编码风格的检测工具
+>ESLint是目标是提供一个插件化的javascript代码检测工具.  
+项目将其作为静态代码对于编码风格的检测工具.
 ###配置文件
 延伸信息 [ESLint rules](http://eslint.cn/docs/rules/)  
 传送门: [.eslintrc](./.eslintrc)  
