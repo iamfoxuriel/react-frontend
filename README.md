@@ -6,7 +6,7 @@ Check by the ESLint
 ## How to Build project
 ### Environment Preparation
 node version > 5.10  
-IDE for Javascript  
+IDE for Javascript
 
 ###Command to build
 1.`npm install`  
