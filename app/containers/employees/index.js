@@ -1,0 +1,22 @@
+import { connect } from 'react-redux';
+import Employees from '../../modules/employees/index';
+import * as EmployeesActionCreator from '../../redux/actions-creators/employees';
+
+
+function mapStateToProps(state) {
+    return {
+        employees: state.employees
+    };
+}
+
+function mapDispatchToProps() {
+    return {
+        loadEmployees: () => EmployeesActionCreator.loadEmployees()
+    };
+}
+
+const EmployeesCtrl = connect(
+    mapStateToProps, mapDispatchToProps
+)(Employees);
+
+export default EmployeesCtrl;

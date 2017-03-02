@@ -16,4 +16,13 @@ router.get('/auth/user', function (req, res) {
 });
 
 
+/**
+ * Employees
+ */
+router.get('/employees', function (req, res) {
+    res.json(require('./employees/employees.json'));
+});
+
+
+
 module.exports = router;

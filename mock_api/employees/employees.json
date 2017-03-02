@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "firstName": "Jaden",
+        "lastName": "Test",
+        "tobacco": "Yes",
+        "hasSpouse": "Yes",
+        "childrenCount": "0",
+        "dateOfBirth": "02-01-1982",
+        "spouseDateOfBirth": "02-01-1985",
+        "zipCode": "90001",
+        "enrollCount": "1"
+    },
+    {
+        "id": "2",
+        "firstName": "Test",
+        "lastName": "Test",
+        "tobacco": "No",
+        "hasSpouse": "No",
+        "childrenCount": "0",
+        "dateOfBirth": "02-01-1982",
+        "spouseDateOfBirth": null,
+        "zipCode": "90001",
+        "enrollCount": "1"
+    }
+]

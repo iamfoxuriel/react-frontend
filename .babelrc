@@ -8,6 +8,6 @@
     // See https://tc39.github.io/process-document/
 
   ],
-  "plugins": ["transform-object-assign"]
+  "plugins": ["transform-object-assign", "transform-object-rest-spread"]
   //  "plugins": ["transform-runtime", "transform-decorators-legacy"]
 }
