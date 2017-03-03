@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import reducers from './redux/reducers';
 import Employees from './containers/employees';
+import configureStore from './redux/store/configureStore';
 
-const store = createStore(reducers);
+const store = configureStore();
 
 class SMBO extends Component {
 

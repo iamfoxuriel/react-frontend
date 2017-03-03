@@ -9,7 +9,7 @@ class Employees extends Component {
 
     static propTypes = {
         employees: PropTypes.arrayOf(PropTypes.object).isRequired,
-        loadEmployees: PropTypes.func.isRequired
+        loadEmployees: PropTypes.func.isRequired,
     };
 
     componentDidMount() {
@@ -19,7 +19,7 @@ class Employees extends Component {
     render() {
         return (
             <ul>
-                {this.props.employees.map(item => (<Employee employee={item} />))}
+                {this.props.employees.map(item => (<Employee {...this.props} employee={item} />))}
             </ul>
         );
     }

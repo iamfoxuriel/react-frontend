@@ -9,9 +9,10 @@ function mapStateToProps(state) {
     };
 }
 
-function mapDispatchToProps() {
+function mapDispatchToProps(dispatch) {
     return {
-        loadEmployees: () => EmployeesActionCreator.loadEmployees()
+        loadEmployees: () => dispatch(EmployeesActionCreator.loadEmployees()),
+        deleteEmployee: (employee) => dispatch(EmployeesActionCreator.deleteEmployee(employee))
     };
 }
 
