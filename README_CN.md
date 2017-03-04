@@ -16,6 +16,9 @@ node version >=4.3.0 <5.0.0 || >=5.10
 
 ##ReactJS
 //TODO
+###VirtualDom
+###RectRouter
+
 ##Redux
 [中文文档](http://cn.redux.js.org/) 
 ###Store
@@ -52,12 +55,30 @@ config code: 0 = 关闭, 1 = 警告, 2 = 报错
 `Spaces`  enable ES6 `import/export braces`  
 如果你是使用IntelliJ/Webstorm, 只要在IDE中使用EditorConfig插件即可 
 
+##Styles
+###全局样式
+通过smbo.js引入index.less
+###模块级别的样式
+通过在dumb组件import相应的样式, 以做到模块之间的样式隔离
+```javascript
+import styles from './Module.lss';
+export default Module extends Component {
+    render() {
+        return (
+            <div className={styles['module-container']+' clearfix'>
+                Test
+            </div>
+        )
+    }
+}
+```
+
 
 ##Tips
 - RHL@1.x 会导致 @autobind 不可用，所以采用 2.x
-- 除了 decorator,还可以使用操作符 `::` 来实现 autobind，参见：http://babeljs.io/blog/2015/05/14/function-bind/
+- 除了 decorator,还可以使用操作符 `::` 来实现 autobind,参见：http://babeljs.io/blog/2015/05/14/function-bind/
 - 开发时不应使用 extract-text-webpack-plugin, 因为它让 CSS 无法热替换
 - 开发时应尽量通过`className={style.className}`来设定类名, 使得CSS可以模块化
 - Object.assign 与 Array.slice 都不是深拷贝
 - 错误的统一处理。错误的统一处理建议采用`middleware`的方式处理。
-
+- 依赖版本检查`npm  outdated`

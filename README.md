@@ -16,6 +16,9 @@ IDE for Javascript
 2. `npm run build` or `npm start`  
 
 ##ReactJS
+//TODO
+###VirtualDom
+###RectRouter
 
 ##Redux
 [Official Site](http://redux.js.org/) 
@@ -45,3 +48,22 @@ config code: 0 = off, 1 = warn, 2 = error
 Or  
 Simply use EditorConfig plugin for your IntelliJ/Webstorm
 
+
+##Styles
+###Global Level
+imported by index.less in smbo.js, just use `className`
+###Module Level
+by importing the individual style files for each module  
+We can make sure the styles of each module are independent 
+```javascript
+import styles from './Module.lss';
+export default Module extends Component {
+    render() {
+        return (
+            <div className={styles['module-container']+' clearfix'>
+                Test
+            </div>
+        )
+    }
+}
+```

@@ -4,7 +4,7 @@ export const REQUEST_API = Symbol('request api');
 
 // A Redux middleware that interprets actions with CALL_API info specified.
 // Performs the call and promises when such actions are dispatched.
-export default store => next => action => {
+export default (store) => (next) => (action) => {
     const callAPI = action[REQUEST_API];
     if (typeof callAPI === 'undefined') {
         return next(action);
@@ -28,28 +28,27 @@ export default store => next => action => {
         return finalAction;
     }
 
-    const [ requestType, successType, failureType ] = types;
+    const [requestType, successType, failureType] = types;
 
     next(actionWith({ type: requestType }));
 
     return service().then(
-    response => {
-        if (onSuccess) {
-            onSuccess(response);
+        (response) => {
+            if (onSuccess) {
+                onSuccess(response);
+            }
+            next(actionWith({
+                response,
+                type: successType
+            }));
+        }, (error) => {
+            if (onFailure) {
+                onFailure(error);
+            }
+            next(actionWith({
+                type: failureType,
+                error: error.message || 'Something bad happened'
+            }));
         }
-        next(actionWith({
-            response,
-            type: successType
-        }));
-    },
-    error => {
-        if (onFailure) {
-            onFailure(error);
-        }
-        next(actionWith({
-            type: failureType,
-            error: error.message || 'Something bad happened'
-        }));
-    }
-  );
+    );
 };

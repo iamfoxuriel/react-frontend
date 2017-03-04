@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Employees from '../../modules/employees/index';
-import * as EmployeesActionCreator from '../../redux/actions-creators/employees';
+import * as EmployeesActionCreator from '../../actions-creators/employees';
 
 
 function mapStateToProps(state) {

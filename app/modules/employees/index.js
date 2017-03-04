@@ -9,7 +9,7 @@ class Employees extends Component {
 
     static propTypes = {
         employees: PropTypes.arrayOf(PropTypes.object).isRequired,
-        loadEmployees: PropTypes.func.isRequired,
+        loadEmployees: PropTypes.func.isRequired
     };
 
     componentDidMount() {
