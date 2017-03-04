@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import employees from './employees';
+import employees from '../../modules/employees/reducers/employees';
 
 
 const rootReducer = combineReducers({

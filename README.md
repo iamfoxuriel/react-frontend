@@ -51,7 +51,7 @@ Simply use EditorConfig plugin for your IntelliJ/Webstorm
 
 ##Styles
 ###Global Level
-imported by index.less in smbo.js, just use `className`
+imported by index.less in index.js, just use `className`
 ###Module Level
 by importing the individual style files for each module  
 We can make sure the styles of each module are independent 

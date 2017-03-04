@@ -8,7 +8,7 @@ class Employee extends Component {
     };
 
     static propTypes = {
-        employee: PropTypes.bool.isRequired,
+        employee: PropTypes.object.isRequired,
         deleteEmployee: PropTypes.func.isRequired
     };
 

@@ -57,7 +57,7 @@ config code: 0 = 关闭, 1 = 警告, 2 = 报错
 
 ##Styles
 ###全局样式
-通过smbo.js引入index.less
+通过index.js引入index.less
 ###模块级别的样式
 通过在dumb组件import相应的样式, 以做到模块之间的样式隔离
 ```javascript

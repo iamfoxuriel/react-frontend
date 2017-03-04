@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { ReduxRouter } from 'redux-router';
-import configureStore from './store/configureStore';
+import configureStore from '../store/index';
 
 const store = configureStore();
 
-class SMBO extends Component {
+class Root extends Component {
 
     render() {
         return (
@@ -16,4 +16,4 @@ class SMBO extends Component {
     }
 }
 
-export default SMBO;
+export default Root;

@@ -19,7 +19,7 @@ class Employees extends Component {
     render() {
         return (
             <ul>
-                {this.props.employees.map(item => (<Employee {...this.props} employee={item} />))}
+                {this.props.employees.map(item => (<Employee key={item.id} {...this.props} employee={item} />))}
             </ul>
         );
     }

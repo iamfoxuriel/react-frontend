@@ -20,10 +20,10 @@ var config = {
         vendor: ['react', 'react-dom','redux','react-redux'],
     },
     resolve: {
-        alias: {
-            'react': 'react/dist/react.min.js',
-            'react-dom': 'react-dom/dist/react-dom.min.js',
-        }
+        // alias: {
+        //     'react': 'react/dist/react.min.js',
+        //     'react-dom': 'react-dom/dist/react-dom.min.js',
+        // }
     },
     output: {
         path: BUILD_PATH,

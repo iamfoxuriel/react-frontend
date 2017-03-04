@@ -1,7 +1,13 @@
 import { Observable } from 'rx-lite';
 import { pushState } from 'redux-router';
 
-import { UNDEFINED, FUNCTION, BOOLEAN, NUMBER } from '../constants/types.js'
+export const UNDEFINED = 'undefined';
+export const FUNCTION  = 'function';
+export const STRING    = 'string';
+export const BOOLEAN   = 'boolean';
+export const NUMBER    = 'number';
+export const OBJECT    = 'object';
+
 
 export const ASSEMBLED_REQUESTS                = Symbol('assembled request');
 export const FILTER                            = Symbol('filter');
@@ -14,6 +20,10 @@ export const TRANSFORMER_MODE                  = Symbol('dynamically change flow
 
 const THROW_EXCEPTION_DEFAULT = false;
 const FILTER_MAP = {};
+
+
+
+
 
 function singleRequest(action, next, lastResponse=null, lastError=null) {
     const { assembleMode, actionTypes, inMap, service, outMap, modifyActionResponse, modifyActionError, //successActionPayload,

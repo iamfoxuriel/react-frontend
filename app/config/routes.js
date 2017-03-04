@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Router } from 'react-router';
-import Employees from './modules/employees';
-import About from './modules/about';
+import Employees from '../modules/employees/containers';
+import About from '../modules/about/components';
 
 export default function getRoutes({ getState, dispatch }) {
-    
+
     function requireAuth(nextState, replaceState, callback) {
         setTimeout(() => {
             if (!getState().auth || !getState().auth.user) {
@@ -13,7 +13,7 @@ export default function getRoutes({ getState, dispatch }) {
             callback();
         }, 0);
     }
-    
+
     return (
         <Router>
             <Route path="/" component={About} onEnter={requireAuth}/>

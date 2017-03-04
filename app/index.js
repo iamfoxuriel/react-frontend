@@ -1,7 +1,7 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SMBO from './smbo';
+import Root from './config/root/index';
 import '../ui/less/index.less';
 
 
@@ -10,7 +10,7 @@ rootDiv.id = 'root';
 document.body.appendChild(rootDiv);
 
 ReactDOM.render(
-    <SMBO />,
+    <Root />,
     document.getElementById('root'),
     () => {
         console.log('Initial done');
