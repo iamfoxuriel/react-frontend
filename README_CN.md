@@ -30,6 +30,10 @@ reducer里面是纯函数, 必须返回immutable对象.
 export 创建Action object的函数以及Action name常量  
 ###middleWare
 
+###Dumb Component && Smart Component
+**只通过porps处理外部响应事件, 没有依赖方法, 与状态隔绝**  
+Smart Component, 我们赋予State管理的能力  
+Dumb Component, 只允许管理组件自身状态, 不允许修改props
 
 
 ##Babel
@@ -71,6 +75,45 @@ export default Module extends Component {
         )
     }
 }
+```
+##代码结构
+```
+.
+├── app                             #开发目录
+|   |   
+|   ├──config                       #配置文件
+|   |   
+|   ├──moudles                      #容器组件,主页
+|   |   |   
+|   |   ├──common                   #common 
+|   |   |
+|   |   |——module1                  #路由文件，容器组件
+|   |   |   |
+|   |   |   |——action-creator       #action创建器
+|   |   |   |
+|   |   |   |——components           #Dumb组件
+|   |   |   |
+|   |   |   |——containers           #Smart组件
+|   |   |   |
+|   |   |   |——styles               #模块独立样式
+|   |   |   |
+|   |   |   |——reducers             #reducers文件
+|   |   |
+|   |   |——module2
+|   |   |
+|   |   ...
+|   |    
+|   └──index.js                     #入口文件
+|      
+├── build                           #发布目录
+├── test                            #测试目录
+├── node_modules                    #包文件夹
+├── .editorconfig     
+├── .gitignore     
+├── .babelrc     
+├── .eslintrc      
+├── webpack.config.js               #webpack配置文件
+├── package.json                    #环境配置
 ```
 
 

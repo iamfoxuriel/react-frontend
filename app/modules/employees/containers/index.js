@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Employees from '../components';
+import Employees from '../components/employees';
 import * as EmployeesActionCreator from '../actions-creators/employees';
 
 

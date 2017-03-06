@@ -1,5 +1,6 @@
-import { LOAD_EMPLOYEES, ADD_EMPLOYEE, DELETE_EMPLOYEE } from '../actions-creators/employees';
-
+export const LOAD_EMPLOYEES = Symbol('LOAD_EMPLOYEES');
+export const ADD_EMPLOYEE = Symbol('ADD_EMPLOYEE');
+export const DELETE_EMPLOYEE = Symbol('DELETE_EMPLOYEE');
 
 const employees = (state = [], action) => {
     switch (action.type) {
