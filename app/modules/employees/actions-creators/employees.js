@@ -11,7 +11,7 @@ function receiveEmployees(employees) {
 
 export function loadEmployees() {
     return (dispatch) => {
-        return fetch('http://localhost:3004/smbo-api/employees')
+        return fetch('http://localhost:3004/api/employees')
             .then(response => response.json())
             .then(json => dispatch(receiveEmployees(json)));
     };
@@ -28,7 +28,7 @@ function doDeleteEmployee(employee) {
 
 export function deleteEmployee(employee) {
     return (dispatch) => {
-        return fetch('http://localhost:3004/smbo-api/employees')
+        return fetch('http://localhost:3004/api/employees')
             .then(() => dispatch(doDeleteEmployee(employee)));
     };
 }
