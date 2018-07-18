@@ -1,4 +1,3 @@
-#Small Business Back Office  
 _[Switch English version](./README.md)_  
 >* 构建工具为webpack, 允许库为ReactJs Redux  
 >* 代码风格为ES6, 打包时候经Babel转换  
