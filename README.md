@@ -1,4 +1,3 @@
-#Small Business Back Office
 _[切换中文版本](./README_CN.md)_  
 > * Build by webpack, with the lib of ReactJs Redux  
 * The codes are in format of ES6(Babel will do the translation during the build)  
